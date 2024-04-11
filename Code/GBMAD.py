@@ -47,7 +47,7 @@ def main():
 
     L = 8  # Set the minimum number of samples L in the grain ball
     d = 0.35  # Set the damping factor for Markov random walk.
-    data_name = 'Iris'
+    data_name = 'ecoli.mat'
 
     # 1. Call the GB generation function to get the label, data, granule list, radius list and center list, respectively
     label, data, gb_list, radius_list, center_list = GettingGranularBalls(data_name, L)
