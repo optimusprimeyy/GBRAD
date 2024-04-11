@@ -9,7 +9,7 @@ You can run GBMAD.py:
 ```
 if __name__ == "__main__":
       main()
-
+```
 ## Contact
 If you have any question, please contact [wangsihan0713@foxmail.com](wangsihan0713@foxmail.com).
 
