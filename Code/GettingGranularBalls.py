@@ -93,7 +93,7 @@ def GettingGranularBalls(data_name, L):
     # input:
     # data_name is the name of the dataset;
     # L is the parameter used to set the minimum number of samples in GB.
-    df = loadmat(r"datasets\\" + data_name)
+    df = loadmat(r"..\\datasets\\" + data_name)
     data = df['trandata'][:, :-1]  # data
     target = df['trandata'][:, -1]  # label
 

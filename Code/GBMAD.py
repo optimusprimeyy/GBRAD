@@ -47,7 +47,7 @@ def main():
 
     L = 8  # Set the minimum number of samples L in the grain ball
     d = 0.35  # Set the damping factor for Markov random walk.
-    data_name = 'ecoli.mat'
+    data_name = 'iris_Irisvirginica_11_variant1' # Select the dataset.
 
     # 1. Call the GB generation function to get the label, data, granule list, radius list and center list, respectively
     label, data, gb_list, radius_list, center_list = GettingGranularBalls(data_name, L)
@@ -81,14 +81,14 @@ def main():
     phi_t = np.ones(len(gb_list)) / + len(gb_list)
     phi_t_temp = np.ones(len(gb_list))
     i = 0
-    while np.linalg.norm(pi_t_temp - pi_t, 1) > 0.0001:
-        pi_t_temp = pi_t
-        pi_t = d + (1 - d) * pi_t @ P
+    while np.linalg.norm(phi_t_temp - phi_t, 1) > 0.0001:
+        phi_t_temp = phi_t
+        phi_t = d + (1 - d) * phi_t @ P
         i += 1
-    pi_t_w = pi_t
+    phi_t_w = phi_t
 
     # 4.1 Calculate Anomaly Degree AD of each GB.
-    AD = pi_t_w
+    AD = phi_t_w
     for i in range(len(gb_dist)):
         gb_dist[i].score = AD[i]
 
@@ -103,7 +103,7 @@ def main():
     print(samples_scores)
 
     info_end = p.memory_full_info().uss / 1024
-    print("The program is consuming memory" + str(info_end - info_start) + "KB")
+    print("The program is consuming memory " + str(info_end - info_start) + "KB")
 
 
 if __name__ == '__main__':
