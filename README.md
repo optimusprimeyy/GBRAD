@@ -21,7 +21,7 @@ if __name__ == '__main__':
     data = Exmaple['trandata'][:, :-1]  # data
     target = Exmaple['trandata'][:, -1]  # label
 
-    samples_scores = GBMAD(data, L, d)
+    samples_scores = GBRAD(data, L, d)
     print(samples_scores)
 ```
 You can get outputs as follows:
