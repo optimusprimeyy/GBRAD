@@ -1,5 +1,5 @@
 # GBRAD
-Sihan Wang, **Zhong Yuan***, Shitong Cheng, Hongmei Chen, and Dezhong Peng, [Granular-ball computing-based Random Walk for anomaly detection](Paper/2025-GBRAD.pdf), Pattern Recognition, 7 March 2023). (Code)
+Sihan Wang, **Zhong Yuan***, Shitong Cheng, Hongmei Chen, and Dezhong Peng, [Granular-ball computing-based Random Walk for anomaly detection](Paper/2025-GBRAD.pdf), Pattern Recognition, 165: 111588. (Code)
 
 ## Abstract
 Anomaly detection is a key task in data mining, which has been successfully employed in many practical scenarios. However, most existing methods usually analyze the anomalous characteristics of samples at a 
