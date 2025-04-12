@@ -1,6 +1,6 @@
 # GBC-based method using random walk for Anomaly Detection (GBRAD)
 # Please refer to the following papers:
-# Granular-Ball Computing-Based Markov Random Walk for Anomaly Detection.
+# Granular-Ball Computing-Based Random Walk for Anomaly Detection.
 # Uploaded by Sihan Wang on March. 7, 2025. E-mail:wangsihan0713@foxmail.com.
 import gc
 import os
