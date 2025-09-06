@@ -8,7 +8,7 @@ distributional characteristics of data from a multi-granularity perspective. For
 by generating adaptive granular-balls, and the multi-granularity information represented by granular-balls with different sizes can reflect the data distribution characteristics of the corresponding region. Secondly, the 
 granular-balls are used to fit the samples for constructing a state transfer matrix in Random walk. Then, the steady-state distribution is generated using iterative computation and is normalized as the degree of anomaly 
 for each granular-ball. Finally, the anomaly score for each sample is computed by relating the anomaly degree of each granular-ball to the samples it covers. Comparative experiments show that the proposed anomaly 
-detection method performs well on multiple datasets, demonstrating its feasibility and superiority in practical applications. The code is publicly available online at [https://github.com/optimusprimeyy/GBRAD](https://github.com/optimusprimeyy/GBRAD).
+detection method performs well on multiple datasets, demonstrating its feasibility and superiority in practical applications.
 
 ## Framework
 ![image](Paper/GBframework.png)
